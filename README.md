@@ -23,7 +23,9 @@ f. Car price will be calculated based on car type, rental basis and total days/w
 
 g. Once the car is returned it will be available for rent for the customers again.
 
-![Untitled](https://user-images.githubusercontent.com/90989827/229258370-c1ef0e1a-dde6-4dd9-a563-a07ac7e5b004.png)
+
+![Untitled](https://user-images.githubusercontent.com/90989827/229259664-427a487c-df32-448e-b682-1625807d2df2.png)
+
 
 
 
