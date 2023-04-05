@@ -1,30 +1,206 @@
 # Car-Rental-System
 Design and implementation a database for keeping track of information about a car rental company(system)
 # DESCRIPTION
-This application allows the user to rent a car based on car type and model. The customer will be allowed to rent the car on weekly basis or daily basis and the price depends on the type of the car selected.
+A car rental system is a software application that manages the rental of vehicles to customers. The system is designed to help car rental companies automate their rental processes, streamline their operations, and improve customer experience. The system typically includes a database to store information about customers, vehicles, rental agreements, rental agencies, and other related information.
 
 
 
 # Steps 
 
 ### First : ER schema diagram
-#### 1.1 ABOUT
-a. Rental company  have cars which to be rented.
+Entities:
 
-b. Each car should belong to any one of the type.
+1/Customer 
 
-c. Customer should be an Individual OR Company  and can rent based on car type.
+2/Car
 
-d. Based on car type its weekly rate and daily rental rate will be displayed.
+3/Rental Agreement
 
-e. Customer can select the car of his choice based on the budget and schedule it for rent whenever he needs it.
+4/Rental Agency
 
-f. Car price will be calculated based on car type, rental basis and total days/weeks.
+5/Payment
 
-g. Once the car is returned it will be available for rent for the customers again.
+Relations:
+
+1/A customer can rent one or more cars. 
+
+2/A car can be rented by one or more customers. 
+
+3/A rental agreement is made between a customer and a rental agency for a specific car.
+
+4/A rental agency can have multiple rental agreements with different customers for different cars.
+
+5/A customer makes a payment for a rental agreement.
+
+6/A rental agreement includes information about the rental period, the rented car, the rental price, and any additional charges.
+
+7/A rental agency is responsible for maintaining the cars and ensuring they are in good condition for rental.
+
+8/A customer may have a loyalty program with a rental agency, which offers discounts or other benefits.
+
+9/A rental agency may have partnerships with other businesses, such as hotels or airlines, to offer bundled packages or discounts.
+
+10/A rental agency may also offer additional services such as insurance, GPS, or child seats for an additional fee.
+
+### Entities before normalization:
+#### Customer:
+Customer ID (primary key)
+
+First name
+
+Last name
+
+Address
+
+Phone number
+
+Email address
+
+Loyalty program information (if applicable)
+
+#### Car:
+Car ID (primary key)
+
+Make and model
+
+Year
+
+Color
+
+License plate number
+
+Rental agency ID (foreign key referencing Rental Agency table)
+
+Availability status
+
+#### Rental Agreement:
+Agreement ID (primary key)
+
+Rental start date and time
+
+Rental end date and time
+
+Rental price
+
+Additional charges (if any)
+
+Customer ID (foreign key referencing Customer table)
+
+Car ID (foreign key referencing Car table)
+
+Rental agency ID (foreign key referencing Rental Agency table)
+
+#### Rental Agency:
+Agency ID (primary key)
+
+Agency name
+
+Address
+
+Phone number
+
+Email address
+
+Partnership information (if any)
+
+Additional services offered (if any)
+
+#### Payment:
+Payment ID (primary key)
+
+Payment date and time 
+
+Payment amount
+
+Payment method (credit card, cash, etc.)
+
+Rental agreement ID (foreign key referencing Rental Agreement table)
+### Entities before normalization:
+#### Customer:
+Customer ID (primary key)
+
+First name
+
+Last name
+
+Email address
+
+Loyalty program ID (foreign key referencing Loyalty Program table)
+
+#### Car:
+Car ID (primary key)
+
+model
+
+Year
+
+Color
+
+License plate number
+
+Rental agency ID (foreign key referencing Rental Agency table)
+
+Car status ID (foreign key referencing Car Status table)
+
+#### Rental Agreement:
+Agreement ID (primary key)
+
+Rental start date and time
+
+Rental end date and time
+
+Rental price
+
+Additional charges (if any)
+
+Customer ID (foreign key referencing Customer table)
+
+Car ID (foreign key referencing Car table)
+
+Rental status ID (foreign key referencing Rental Status table)
+
+#### Rental Agency:
+Agency ID (primary key)
+
+Agency name
+
+Address
+
+Phone number
+
+Email address
+
+#### Payment:
+Payment ID (primary key)
+
+Payment date and time
+
+Payment amount
+
+Payment method (credit card, cash, etc.)
+
+Rental agreement ID (foreign key referencing Rental Agreement table)
+
+#### Loyalty Program:
+Loyalty program ID (primary key)
+
+Loyalty program name
+
+Discount percentage
+
+##### Car Status:
+Car status ID (primary key)
+
+Car status name
+
+#### Rental Status:
+
+Rental status ID (primary key)
+
+Rental status name
 
 
-![Untitled](https://user-images.githubusercontent.com/90989827/229259664-427a487c-df32-448e-b682-1625807d2df2.png)
+
 
 
 
