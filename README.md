@@ -211,4 +211,9 @@ Rental status name
 ### Logical Model:
 ![photo_2023-04-06_14-15-53](https://user-images.githubusercontent.com/90989827/230389910-d305404b-75bd-494e-9b9d-360ae352db2b.jpg)
 
+### NB :
+"Car Status" ={ "available", "rented", "in maintenance", "out of service"};
+
+"Rental Status" ={"reserved", "rented", "returned", "overdue", "cancelled"}
+
 
