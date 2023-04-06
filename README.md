@@ -1,5 +1,5 @@
 # Car-Rental-System
-Design and implementation a database for keeping track of information about a car rental company(system)
+Design and implementation a database for keeping track of information about a car rental system
 # DESCRIPTION
 A car rental system is a software application that manages the rental of vehicles to customers. The system is designed to help car rental companies automate their rental processes, streamline their operations, and improve customer experience. The system typically includes a database to store information about customers, vehicles, rental agreements, rental agencies, and other related information.
 
