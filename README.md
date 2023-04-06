@@ -103,8 +103,6 @@ Rental end date and time
 
 Rental price
 
-Additional charges (if any)
-
 Customer ID (foreign key referencing Customer table)
 
 Car ID (foreign key referencing Car table)
