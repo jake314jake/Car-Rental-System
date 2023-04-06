@@ -122,7 +122,7 @@ Payment method (credit card, cash, etc.)
 
 Rental agreement ID (foreign key referencing Rental Agreement table)
 ### Entities after normalization:
-### Customer:
+### 1)Customer:
 ---
 Customer ID (primary key)
 
@@ -134,7 +134,7 @@ Email address
 
 Loyalty program ID (foreign key referencing Loyalty Program table)
 
-### Car:
+### 2)Car:
 ---
 Car ID (primary key)
 
@@ -150,7 +150,7 @@ Rental agency ID (foreign key referencing Rental Agency table)
 
 Car status ID (foreign key referencing Car Status table)
 
-### Rental Agreement:
+### 3)Rental Agreement:
 ---
 Agreement ID (primary key)
 
@@ -168,7 +168,7 @@ Car ID (foreign key referencing Car table)
 
 Rental status ID (foreign key referencing Rental Status table)
 
-### Rental Agency:
+### 4)Rental Agency:
 ---
 Agency ID (primary key)
 
@@ -180,7 +180,7 @@ Phone number
 
 Email address
 
-### Payment:
+### 5)Payment:
 ---
 Payment ID (primary key)
 
@@ -192,21 +192,26 @@ Payment method (credit card, cash, etc.)
 
 Rental agreement ID (foreign key referencing Rental Agreement table)
 
-### Loyalty Program:
+### 6)Loyalty Program:
 ---
 Loyalty program ID (primary key)
 
 Loyalty program name
 
+
+### 7)Loyalty Program Discount:
+---
+Loyalty program ID (foreign key)
+
 Discount percentage
 
-### Car Status:
+### 8)Car Status:
 ---
 Car status ID (primary key)
 
 Car status name
 
-### Rental Status:
+### 9)Rental Status:
 ---
 
 Rental status ID (primary key)
