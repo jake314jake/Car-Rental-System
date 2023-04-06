@@ -87,9 +87,6 @@ Phone number
 
 Email address
 
-Partnership information (if any)
-
-Additional services offered (if any)
 
 ### Rental Agreement:
 ---
@@ -158,7 +155,6 @@ Rental end date and time
 
 Rental price
 
-Additional charges (if any)
 
 Customer ID (foreign key referencing Customer table)
 
