@@ -44,6 +44,7 @@ A car rental system is a software application that manages the rental of vehicle
 
 ### Entities before normalization:
 ### Customer:
+---
 Customer ID (primary key)
 
 First name
@@ -59,6 +60,7 @@ Email address
 Loyalty program information (if applicable)
 
 ### Car:
+---
 Car ID (primary key)
 
 Make and model
@@ -76,6 +78,7 @@ Availability status
 
 
 ### Rental Agency:
+---
 Agency ID (primary key)
 
 Agency name
@@ -91,6 +94,7 @@ Partnership information (if any)
 Additional services offered (if any)
 
 ### Rental Agreement:
+---
 Agreement ID (primary key)
 
 Rental start date and time
@@ -109,9 +113,10 @@ Rental agency ID (foreign key referencing Rental Agency table)
 
 
 ### Payment:
+---
 Payment ID (primary key)
 
-Payment date and time 
+Payment date 
 
 Payment amount
 
@@ -120,6 +125,7 @@ Payment method (credit card, cash, etc.)
 Rental agreement ID (foreign key referencing Rental Agreement table)
 ### Entities after normalization:
 ### Customer:
+---
 Customer ID (primary key)
 
 First name
@@ -131,6 +137,7 @@ Email address
 Loyalty program ID (foreign key referencing Loyalty Program table)
 
 ### Car:
+---
 Car ID (primary key)
 
 model
@@ -146,6 +153,7 @@ Rental agency ID (foreign key referencing Rental Agency table)
 Car status ID (foreign key referencing Car Status table)
 
 ### Rental Agreement:
+---
 Agreement ID (primary key)
 
 Rental start date and time
@@ -163,6 +171,7 @@ Car ID (foreign key referencing Car table)
 Rental status ID (foreign key referencing Rental Status table)
 
 ### Rental Agency:
+---
 Agency ID (primary key)
 
 Agency name
@@ -174,6 +183,7 @@ Phone number
 Email address
 
 ### Payment:
+---
 Payment ID (primary key)
 
 Payment date and time
@@ -185,18 +195,21 @@ Payment method (credit card, cash, etc.)
 Rental agreement ID (foreign key referencing Rental Agreement table)
 
 ### Loyalty Program:
+---
 Loyalty program ID (primary key)
 
 Loyalty program name
 
 Discount percentage
 
-#### Car Status:
+### Car Status:
+---
 Car status ID (primary key)
 
 Car status name
 
 ### Rental Status:
+---
 
 Rental status ID (primary key)
 
