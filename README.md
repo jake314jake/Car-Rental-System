@@ -1,5 +1,5 @@
 # Car-Rental-System
-Design and implementation a database for keeping track of information about a car rental system
+Design and implementation a database for keeping track of information about a car rental company(system)
 # DESCRIPTION
 A car rental system is a software application that manages the rental of vehicles to customers. The system is designed to help car rental companies automate their rental processes, streamline their operations, and improve customer experience. The system typically includes a database to store information about customers, vehicles, rental agreements, rental agencies, and other related information.
 
@@ -7,8 +7,8 @@ A car rental system is a software application that manages the rental of vehicle
 
 # Steps 
 
-### First : ER schema diagram
-Entities:
+## First : ER schema diagram
+## Entities:
 
 1/Customer 
 
@@ -20,7 +20,7 @@ Entities:
 
 5/Payment
 
-Relations:
+## Relations:
 
 1/A customer can rent one or more cars. 
 
@@ -38,10 +38,12 @@ Relations:
 
 8/A customer may have a loyalty program with a rental agency, which offers discounts or other benefits.
 
+9/A rental agency may have partnerships with other businesses, such as hotels or airlines, to offer bundled packages or discounts.
 
+10/A rental agency may also offer additional services such as insurance, GPS, or child seats for an additional fee.
 
 ### Entities before normalization:
-#### Customer:
+### Customer:
 Customer ID (primary key)
 
 First name
@@ -56,7 +58,7 @@ Email address
 
 Loyalty program information (if applicable)
 
-#### Car:
+### Car:
 Car ID (primary key)
 
 Make and model
@@ -71,7 +73,24 @@ Rental agency ID (foreign key referencing Rental Agency table)
 
 Availability status
 
-#### Rental Agreement:
+
+
+### Rental Agency:
+Agency ID (primary key)
+
+Agency name
+
+Address
+
+Phone number
+
+Email address
+
+Partnership information (if any)
+
+Additional services offered (if any)
+
+### Rental Agreement:
 Agreement ID (primary key)
 
 Rental start date and time
@@ -88,22 +107,8 @@ Car ID (foreign key referencing Car table)
 
 Rental agency ID (foreign key referencing Rental Agency table)
 
-#### Rental Agency:
-Agency ID (primary key)
 
-Agency name
-
-Address
-
-Phone number
-
-Email address
-
-Partnership information (if any)
-
-Additional services offered (if any)
-
-#### Payment:
+### Payment:
 Payment ID (primary key)
 
 Payment date and time 
@@ -115,7 +120,6 @@ Payment method (credit card, cash, etc.)
 Rental agreement ID (foreign key referencing Rental Agreement table)
 ### Entities after normalization:
 ### Customer:
-
 Customer ID (primary key)
 
 First name
@@ -127,10 +131,9 @@ Email address
 Loyalty program ID (foreign key referencing Loyalty Program table)
 
 ### Car:
-
 Car ID (primary key)
 
-Model
+model
 
 Year
 
@@ -142,19 +145,16 @@ Rental agency ID (foreign key referencing Rental Agency table)
 
 Car status ID (foreign key referencing Car Status table)
 
-Price per day
-
 ### Rental Agreement:
-
 Agreement ID (primary key)
 
 Rental start date and time
 
-
-Number of days rented
+Rental end date and time
 
 Rental price
 
+Additional charges (if any)
 
 Customer ID (foreign key referencing Customer table)
 
@@ -163,7 +163,6 @@ Car ID (foreign key referencing Car table)
 Rental status ID (foreign key referencing Rental Status table)
 
 ### Rental Agency:
-
 Agency ID (primary key)
 
 Agency name
@@ -175,7 +174,6 @@ Phone number
 Email address
 
 ### Payment:
-
 Payment ID (primary key)
 
 Payment date and time
@@ -187,19 +185,13 @@ Payment method (credit card, cash, etc.)
 Rental agreement ID (foreign key referencing Rental Agreement table)
 
 ### Loyalty Program:
-
 Loyalty program ID (primary key)
 
 Loyalty program name
 
-### Loyalty Program Discount:
-
-Loyalty program name (foreign key referencing Loyalty Program table)
-
 Discount percentage
 
-### Car Status:
-
+#### Car Status:
 Car status ID (primary key)
 
 Car status name
@@ -210,8 +202,13 @@ Rental status ID (primary key)
 
 Rental status name
 
+### USE CASE :
 
 
 
+
+![Untitled](https://user-images.githubusercontent.com/90989827/230389561-0a345a00-eb05-416d-9f8c-7aaad0de3539.png)
+### Logical Model:
+![photo_2023-04-06_14-15-53](https://user-images.githubusercontent.com/90989827/230389910-d305404b-75bd-494e-9b9d-360ae352db2b.jpg)
 
 
