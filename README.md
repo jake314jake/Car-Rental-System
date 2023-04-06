@@ -38,9 +38,7 @@ A car rental system is a software application that manages the rental of vehicle
 
 8/A customer may have a loyalty program with a rental agency, which offers discounts or other benefits.
 
-9/A rental agency may have partnerships with other businesses, such as hotels or airlines, to offer bundled packages or discounts.
 
-10/A rental agency may also offer additional services such as insurance, GPS, or child seats for an additional fee.
 
 ### Entities before normalization:
 ### Customer:
