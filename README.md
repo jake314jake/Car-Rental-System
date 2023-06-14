@@ -212,12 +212,7 @@ Rental status ID (primary key)
 
 Rental status name
 
-### USE CASE :
 
-
-
-
-![Untitled](https://user-images.githubusercontent.com/90989827/230389561-0a345a00-eb05-416d-9f8c-7aaad0de3539.png)
 ### Logical Model:
 ![photo_2023-04-06_14-15-53](https://user-images.githubusercontent.com/90989827/230389910-d305404b-75bd-494e-9b9d-360ae352db2b.jpg)
 
